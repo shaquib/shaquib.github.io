@@ -47,7 +47,7 @@ if (!function_exists('json_encode'))
 }
 
 
-$conn = mysqli_connect('https://github.com/shaquib/shaquib.github.io','shaquib','') or die("could not connect to database");
+$conn = mysqli_connect() or die("could not connect to database");
 
 $select_db=mysqli_select_db($conn, 'feedback') or die("could not connect");
 session_start();
